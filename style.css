@@ -156,6 +156,7 @@ footer {
   background: #0f1117;
 }
 
+/* Sidebar Container */
 .sidebar {
   position: fixed;
   top: 0;
@@ -163,53 +164,57 @@ footer {
   height: 100%;
   width: 60px;
   background-color: #161b22;
-  overflow: hidden;
   transition: width 0.3s ease;
-  z-index: 999;
+  z-index: 1000;
+  overflow-x: hidden;
 }
 
+/* Expand on hover */
 .sidebar:hover {
   width: 200px;
 }
 
+/* Sidebar List */
 .sidebar ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
+/* Sidebar Items */
 .sidebar ul li {
-  display: flex;
-  align-items: center;
-  padding: 1.5rem 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.sidebar ul li:hover {
-  background-color: #1f2630;
+  transition: background 0.3s;
 }
 
 .sidebar ul li a {
-  color: #00bcd4;
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
   text-decoration: none;
+  color: #00bcd4;
   transition: transform 0.2s ease;
 }
 
-.sidebar ul li span {
-  color: #e0e0e0;
-  margin-left: 1rem;
+.sidebar ul li a:hover {
+  background-color: #1f2630;
+  transform: scale(1.1) rotate(-2deg);
+}
+
+/* Icons */
+.sidebar .icon {
+  font-size: 1.5rem;
+  width: 30px;
+  text-align: center;
+}
+
+/* Labels: hidden by default, shown on hover */
+.sidebar .label {
+  margin-left: 10px;
   white-space: nowrap;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.sidebar:hover ul li span {
+.sidebar:hover .label {
   opacity: 1;
-}
-
-/* Jiggle and grow on hover */
-.sidebar ul li:hover a {
-  transform: scale(1.2) rotateZ(-3deg);
 }

@@ -2,39 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Sidebar Navigation -->
   <div class="sidebar">
-  <ul>
-    <li><a href="index.html">🏠</a><span>Home</span></li>
-    <li><a href="projects.html">💻</a><span>Projects</span></li>
-    <li><a href="about.html">👤</a><span>About</span></li>
-    <li><a href="contact.html">📬</a><span>Contact</span></li>
-  </ul>
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="icon">🏠</span>
+          <span class="label">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="projects.html">
+          <span class="icon">💻</span>
+          <span class="label">Projects</span>
+        </a>
+      </li>
+      <li>
+        <a href="about.html">
+          <span class="icon">👤</span>
+          <span class="label">About</span>
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">
+          <span class="icon">📬</span>
+          <span class="label">Contact</span>
+        </a>
+      </li>
+    </ul>
   </div>
-  <canvas id="stars-canvas"></canvas>
 
-  <header>
-    <nav>
-      <div class="logo">YourName</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Main Hero Section -->
+  <main class="hero">
+    <div class="content">
+      <img src="/mnt/data/e65222d9-0839-4ceb-a9a9-8ad7221c3f80.avif" alt="Your photo" class="hero-image" />
+      <h1>Your Name</h1>
+      <p class="tagline">Creative technologist, engineer, and builder of ideas.</p>
+    </div>
 
-  <section class="home">
-    <img src="assets/profile.jpg" alt="Your photo" class="profile-pic" />
-    <h1>Your Name</h1>
-    <p class="intro">Creative developer and problem-solver. I build software that connects people, ideas, and the future.</p>
-  </section>
+    <!-- Moving stars background canvas -->
+    <canvas id="stars-bg"></canvas>
+  </main>
 
-  <script src="script.js"></script>
+  <script src="stars.js"></script>
 </body>
 </html>
