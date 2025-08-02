@@ -155,3 +155,61 @@ footer {
   height: 100%;
   background: #0f1117;
 }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 60px;
+  background-color: #161b22;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar:hover {
+  width: 200px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sidebar ul li:hover {
+  background-color: #1f2630;
+}
+
+.sidebar ul li a {
+  color: #00bcd4;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.sidebar ul li span {
+  color: #e0e0e0;
+  margin-left: 1rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar:hover ul li span {
+  opacity: 1;
+}
+
+/* Jiggle and grow on hover */
+.sidebar ul li:hover a {
+  transform: scale(1.2) rotateZ(-3deg);
+}
