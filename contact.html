@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Your Name</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Sidebar Navigation -->
   <div class="sidebar">
-  <ul>
-    <li><a href="index.html">🏠</a><span>Home</span></li>
-    <li><a href="projects.html">💻</a><span>Projects</span></li>
-    <li><a href="about.html">👤</a><span>About</span></li>
-    <li><a href="contact.html">📬</a><span>Contact</span></li>
-  </ul>
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="icon">🏠</span>
+          <span class="label">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="projects.html">
+          <span class="icon">💻</span>
+          <span class="label">Projects</span>
+        </a>
+      </li>
+      <li>
+        <a href="about.html">
+          <span class="icon">👤</span>
+          <span class="label">About</span>
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">
+          <span class="icon">📬</span>
+          <span class="label">Contact</span>
+        </a>
+      </li>
+    </ul>
   </div>
-  <header>
-    <nav>
-      <div class="logo">YourName</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="section">
+  <!-- Contact Section -->
+  <main class="page">
     <h2>Contact</h2>
     <div class="contact-item">
-      <strong>Email:</strong> <a href="mailto:your@email.com">your@email.com</a>
+      <span class="icon">✉️</span>
+      <a href="mailto:your@email.com">your@email.com</a>
     </div>
     <div class="contact-item">
-      <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+      <span class="icon">🔗</span>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
     </div>
     <div class="contact-item">
-      <strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+      <span class="icon">🐙</span>
+      <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
     </div>
-  </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Your Name</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
