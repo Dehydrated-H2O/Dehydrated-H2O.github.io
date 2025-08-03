@@ -8,7 +8,7 @@ body, html {
   overflow-x: hidden;
 }
 
-/* Sidebar (Right) */
+/* Sidebar (Right) - Updated with professional icons */
 .sidebar {
   position: fixed;
   top: 0;
@@ -56,13 +56,33 @@ body, html {
 
 .sidebar ul li a:hover {
   background-color: #1f2630;
-  transform: scale(1.1) rotate(-2deg);
+  transform: scale(1.05);
 }
 
+/* Professional Icons Styling */
 .sidebar .icon {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   width: 30px;
-  text-align: center;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.sidebar .ph {
+  transition: all 0.3s ease;
+  color: #c9d1d9;
+}
+
+.sidebar ul li a:hover .ph {
+  transform: scale(1.15);
+  color: #58a6ff;
+}
+
+.sidebar ul li a.active .ph {
+  color: #58a6ff;
+  filter: drop-shadow(0 0 4px rgba(88, 166, 255, 0.5));
 }
 
 .sidebar .label {
@@ -87,7 +107,7 @@ body, html {
   position: relative;
   z-index: 1;
   text-align: center;
-  padding-right: 80px; /* space for sidebar */
+  padding-right: 80px;
 }
 
 .hero .content {
@@ -121,7 +141,7 @@ body, html {
 /* Page Sections */
 .page {
   padding: 3rem;
-  padding-right: 100px; /* space for sidebar */
+  padding-right: 100px;
   min-height: 100vh;
   max-width: 900px;
   margin: 0 auto;
@@ -197,7 +217,7 @@ body, html {
 footer {
   text-align: center;
   padding: 2rem;
-  padding-right: 100px; /* space for sidebar */
+  padding-right: 100px;
   color: #8b949e;
   font-size: 0.9rem;
 }
@@ -249,6 +269,10 @@ footer {
   
   .sidebar .label {
     display: none !important;
+  }
+  
+  .sidebar .icon {
+    font-size: 1.6rem; /* Slightly larger for mobile */
   }
   
   .hero, .page {

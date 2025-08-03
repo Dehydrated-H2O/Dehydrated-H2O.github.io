@@ -46,3 +46,15 @@ function drawStars() {
 
 createStars();
 drawStars();
+
+// Smooth icon appearance
+document.addEventListener('DOMContentLoaded', () => {
+  const icons = document.querySelectorAll('.ph');
+  icons.forEach(icon => {
+    icon.style.opacity = '0';
+    setTimeout(() => {
+      icon.style.transition = 'opacity 0.4s ease';
+      icon.style.opacity = '1';
+    }, 100);
+  });
+});
